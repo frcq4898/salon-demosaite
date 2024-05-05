@@ -1,0 +1,110 @@
+/* header */
+
+header {
+    width: 100vw;
+    height: 83px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 2%;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 0 6px 3px grey;
+}
+
+.header-wrapper {
+    max-width: 900px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    padding-left: 0.5rem;
+}
+
+.initial-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.initial-nav ul li {
+    transition: .3s;
+    padding-left: 30px;
+}
+
+.initial-nav ul li:hover {
+    opacity: 0.5;
+}
+
+.sliding-nav {
+    position: fixed;
+    height: 100vh;
+    background-color: rgba(35, 35, 35, 0.952);
+    min-width: 160px;
+    max-width: 30%;
+    padding-top: 80px;
+    padding-inline: 8%;
+    top: 0;
+    bottom: 0;
+    left: -700px;
+    transition: .8s;
+}
+
+.sliding-nav a {
+    color: white;
+}
+
+.open .sliding-nav {
+    left: 0;
+}
+
+.open .sliding-nav ul a {
+    color: white;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.open .sliding-nav ul li a:hover {
+    color: grey;
+}
+
+.sliding-nav ul li {
+    margin-bottom: 25px;
+}
+
+header img {
+    width: 130px;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+.toggle-btn span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: black;
+}
+
+.toggle-btn span:nth-of-type(1) {
+    top: 20%;
+}
+
+.toggle-btn span:nth-of-type(2) {
+    top: 50%;
+}
+
+.toggle-btn span:nth-of-type(3) {
+    top: 80%;
+}

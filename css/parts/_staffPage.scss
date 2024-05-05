@@ -1,0 +1,138 @@
+/* staff-page */
+
+.staff-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+
+    img {
+        width: 70%;
+        margin-bottom: 10px;
+        transition: .3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+
+
+
+
+.staffPage-items {
+    text-align: center;
+}
+
+.staffPage-item {
+    width: 100%;
+    margin-bottom: 50px;
+
+    p {
+        margin-top: 6px;
+    }
+}
+
+.staffPage-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    .staff-Profile, .staffPage-web {
+        width: 240px;
+        height: 32px;
+        line-height: 32px;
+        position: relative;
+        margin: 0 auto;
+        border: 2px solid black;
+        transition: .3s;
+
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: .3s;
+        }
+
+        a:hover {
+            background-color: rgb(186, 186, 186);
+            color: black;
+        }
+    }
+
+    .staff-Profile {
+        margin-top: 12px;
+    }
+
+    .staffPage-web {
+        margin-top: 14px;
+        background-color: black;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+
+
+
+/* .staffPage-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.staff-Profile {
+    width: 240px;
+    height: 32px;
+    line-height: 32px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 12px;
+    border: 2px solid black;
+    transition: .3s;
+}
+
+
+.staff-Profile a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+
+.staff-Profile a:hover {
+    background-color: rgb(186, 186, 186);
+}
+
+.staffPage-web {
+    width: 240px;
+    height: 32px;
+    line-height: 32px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 14px;
+    background-color: black;
+    border: 2px solid black;
+}
+
+.staffPage-web a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    transition: .3s;
+}
+
+.staffPage-web a:hover {
+    color: black;
+    background-color: rgb(186, 186, 186);
+} */

@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: inherit;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    display: inline-block;
+}
+
+
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.page-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+section {
+    margin-bottom: 160px;
+}
+
+img {
+    vertical-align: bottom;
+    object-fit: cover;
+}

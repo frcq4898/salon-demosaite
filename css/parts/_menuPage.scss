@@ -1,0 +1,139 @@
+/* menu-page */
+
+.menu-page {
+    padding-top: 100px;
+    text-align: center;
+    margin-bottom: 160px;
+}
+
+.page-title {
+    font-size: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.page-title::after {
+    position: absolute;
+    content: "";
+    width: 110%;
+    height: 3px;
+    background: black;
+    left: -5%;
+    bottom: 0;
+}
+
+
+
+.menu-list {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+.menu-label {
+    display: block;
+    padding: 25px;
+    line-height: 1;
+    cursor: pointer;
+    font-size: 30px;
+    border: 1px solid black;
+    letter-spacing: 3px;
+}
+
+.menu-label::before {
+    position: absolute;
+    content: "";
+    top: 63px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: black;
+}
+
+input {
+    display: none;
+}
+
+.list-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list .list-name {
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+#menu-bar01:checked~#links01 .list-name {
+    height: 59px;
+    opacity: 1;
+    border-bottom: 1px solid black;
+    padding: 30px 0 5px 10px;
+}
+
+#menu-bar02:checked~#links02 .list-name {
+    height: 59px;
+    opacity: 1;
+    border-bottom: 1px solid black;
+    padding: 30px 0 5px 10px;
+}
+
+#menu-bar03:checked~#links03 .list-name {
+    height: 59px;
+    opacity: 1;
+    border-bottom: 1px solid black;
+    padding: 30px 0 5px 10px;
+}
+
+#menu-bar04:checked~#links04 .list-name {
+    height: 59px;
+    opacity: 1;
+    border-bottom: 1px solid black;
+    padding: 30px 0 5px 10px;
+}
+
+#menu-bar05:checked~#links05 .list-name {
+    height: 59px;
+    opacity: 1;
+    border-bottom: 1px solid black;
+    padding: 30px 0 5px 10px;
+}
+
+#menu-bar06:checked~#links06 .list-name {
+    height: 59px;
+    opacity: 1;
+    border-bottom: 1px solid black;
+    padding: 30px 0 5px 10px;
+}
+
+#menu-bar07:checked~#links07 .list-name {
+    height: 59px;
+    opacity: 1;
+    border-bottom: 1px solid black;
+    padding: 30px 0 5px 10px;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 15px;
+    right: 4%;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.menu-btn::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 23%;
+    border-top: 13px solid white;
+    border-right: 13px solid transparent;
+    border-left: 13px solid transparent;
+}

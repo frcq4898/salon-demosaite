@@ -1,0 +1,96 @@
+/* hair style */
+
+.hair-page {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.hair-label {
+    width: 16%;
+    font-size: larger;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    border: none;
+    color: rgb(173, 173, 173);
+    cursor: pointer;
+}
+
+.tab-box {
+    padding: 0 5%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+
+/* ▼選択状態のタブ(＝チェックが入っているラジオボタンの隣にあるタブの装飾) */
+input:checked+.hair-label {
+    color: black;
+}
+
+input:checked+.hair-label::after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: -3px;
+    left: 10%;
+}
+
+.tab-contents {
+    display: none;
+    width: 100%;
+    margin-top: 33px;
+}
+
+#tabcheck1:checked~#tab-contents1 {
+    display: block;
+}
+
+#tabcheck2:checked~#tab-contents2 {
+    display: block;
+}
+
+#tabcheck3:checked~#tab-contents3 {
+    display: block;
+}
+
+#tabcheck4:checked~#tab-contents4 {
+    display: block;
+}
+
+#tabcheck5:checked~#tab-contents5 {
+    display: block;
+}
+
+#tabcheck6:checked~#tab-contents6 {
+    display: block;
+}
+
+.style-contents {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 5%;
+}
+
+.staff-item {
+    width: 40%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.staff-item p {
+    margin-bottom: 5px;
+}
+
+.staff-item img {
+    width: 100%;
+    margin-bottom: 8px;
+    transition: .3s;
+}
+
+.staff-item img:hover {
+    opacity: 0.8;
+}
